@@ -1,8 +1,10 @@
+
 body{
   margin: 0%;
   padding: 0%;
   border: 0cap;
 }
+
 .div-1 {
   background-color: black;
   width: 100%;
@@ -36,8 +38,16 @@ flex-flow: wrap;
   flex-flow: wrap;
 }
 
+.skill{
+  width: 100%; 
+   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  display: block;
 
-
+}
 
 
 
@@ -223,11 +233,11 @@ h2 {
   transform: translate(-0%,-110%);
 }
 
-.aboutMe span{
+.aboutMe .head{
   display: inline-block;
   font-size: 200;
   font-weight: 400;
-  -webkit-text-stroke: 1px rgb(255, 0, 0);
+  -webkit-text-stroke: 0.8px rgb(255, 0, 0);
   -webkit-text-fill-color: transparent;
 }
 
@@ -294,6 +304,231 @@ ul{
   list-style-type: none;
 }
 
+.div-5 {
+  width: 100%;
+  height: fit-content;
+  padding: 0.1px;
+  text-align: center;
+  position: relative;
+
+  color: rgb(0, 0, 0);
+}
+
+.div-5 h1{
+  font-size: 100px;
+  font-weight: 250;
+  position: relative;
+  z-index: 10;
+}
+
+
+.div-5 .aboutMe {
+  position: absolute;
+  width: 100%;
+  transform: translate(-0%,-110%);
+}
+
+.skill-bars{
+
+  padding: 25px 30px;
+  width: 50%;
+  height: auto;
+  margin-left: 350px;
+  background: #000000;
+  color: white;
+  box-shadow: 5px 5px 20px rgb(245, 4, 4);
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(94deg, rgba(214,10,10,1) 0%, rgba(245,0,255,1) 21%, rgba(255,243,0,1) 100%);
+  animation: animate 3s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+  width: 90%;
+}
+.bar .progress-line.css span{
+  width: 80%;
+}
+.bar .progress-line.javascript span{
+  width: 70%;
+}
+.bar .progress-line.python span{
+  width: 80%;
+}
+.bar .progress-line.mysql span{
+  width: 70%;
+}
+.bar .progress-line.c span{
+  width: 70%;
+}
+.bar .progress-line.cpp span{
+  width: 75%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.html span::after{
+  content: "90%";
+}
+.progress-line.css span::after{
+  content: "80%";
+}
+.progress-line.javascript span::after{
+  content: "70%";
+}
+.progress-line.python span::after{
+  content: "80%";
+}
+.progress-line.mysql span::after{
+  content: "70%";
+}
+.progress-line.c span::after{
+  content: "75%";
+}
+.progress-line.cpp span::after{
+  content: "70%";
+}
+
+.projects{
+  background-color: black;
+  color: white;
+
+
+}
+.project1 {
+width: 100%;
+height: auto;
+background: rgb(10, 0, 0);
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.project{
+  width: 20%;
+  height: 300px;
+  border: 2px solid red;
+  margin: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.project h1 {
+  font-size: 40px;
+  margin: 5%;
+  color: red;
+  box-shadow: 5px 5px 20px rgb(245, 4, 4);
+  text-align: center;
+}
+
+.project p {
+  font-size: 25px;
+  margin: 5%;
+}
+
+.project-head {
+  background-color: #000;
+  width: 100%;
+  padding-top: 0.5%;
+  height: fit-content;
+  text-align: center;
+  color: rgb(255, 251, 251);
+  margin-bottom: -4.4%;
+  /* position: static; */
+
+}
+
+.project-head h1{
+  font-size: 100px;
+  font-weight: 250;
+  position: relative;
+  z-index: 10;
+}
+
+.project-head .aboutMe {
+  position: absolute;
+  width: 100%;
+  transform: translate(-0%,-110%);
+}
+
+
+
+
+
+
 
 @media screen and (min-width: 600px) {
 .nav__link {
@@ -339,5 +574,24 @@ ul{
   .info {
     text-align: center;
   }
+
+
+  .skill-bars{
+
+    padding: 25px 30px;
+    width: 80%;
+    height: auto;
+    margin-left: 55px;
+    background: #000000;
+    color: white;
+    box-shadow: 5px 5px 20px rgb(245, 4, 4);
+    border-radius: 10px;
+  }
+
+
+  .project{
+    width: 90%;
+  }
+
 }
 
