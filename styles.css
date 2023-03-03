@@ -1,0 +1,343 @@
+body{
+  margin: 0%;
+  padding: 0%;
+  border: 0cap;
+}
+.div-1 {
+  background-color: black;
+  width: 100%;
+  height: auto;
+}
+
+.div-2 {
+background-color: black;
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-flow: wrap;
+}
+
+.div-4 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap; 
+}
+
+.info {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+
+
+
+
+
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: rgb(5, 5, 116);
+  padding-left: 90px;
+  text-decoration:none;
+}
+
+.hamburger {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 9px;
+  background-color: rgb(255, 255, 255);
+}
+
+.nav__link {
+  position: fixed;
+  width: 94%;
+  top: 5rem;
+  left: 18px;
+  padding-right: 90px;
+  
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration:none;
+  font-size: 20px;
+  color: white;
+  font-style: bold;
+}
+
+.nav__link a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  display: inline-block;
+  color: rgb(255, 0, 0);
+  transition: color ease 1s;
+  position: relative;
+  background: linear-gradient(270deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 12%, rgba(251,227,227,1) 62%);
+  transition: all ease 0.5s; 
+  border-radius: 20%;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+h3 {
+  color: aliceblue;
+}
+
+.letter {
+  color: red;
+}
+
+.div-2 .left {
+  width: 50%;
+  height: auto;
+  background-color: black;
+  color: aliceblue;
+}
+
+.div-2 .left .hello{
+  text-align: center;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.div-2 .left .name {
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+}
+
+.div-2 .left p{
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 1s steps(13) infinite alternate,
+    blink 800ms steps(13) infinite normal;
+  border-right: 5px solid black;
+  padding-left: 30%;
+  position: relative;
+}
+
+.cv {
+  text-decoration: none;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: 2px dashed red;
+  padding: 20px;
+  font-style: bold;
+  background-color: red;
+  border-radius: 40px;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  line-height: 500%;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: black;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
+.div-2 .right {
+
+  text-align: center;
+  color: rgb(255, 0, 0);
+
+  height: auto;
+
+}
+
+.div-2 img {
+  border: 2px solid white;
+  border-radius:5cqmax;
+  padding:25px ;
+  margin-bottom: 70px;
+
+  
+  width:100%;
+  max-width:90%; 
+}
+
+
+.div-3 {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  color: rgb(54, 54, 54);
+  position: relative;
+}
+.div-3 h1{
+  font-size: 100px;
+  font-weight: 250;
+  position: relative;
+  z-index: 10;
+}
+
+.div-3 .aboutMe {
+  position: absolute;
+  width: 100%;
+  transform: translate(-0%,-110%);
+}
+
+.aboutMe span{
+  display: inline-block;
+  font-size: 200;
+  font-weight: 400;
+  -webkit-text-stroke: 1px rgb(255, 0, 0);
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+.div-4 .div-4left {
+
+  text-align: center;
+  color: rgb(255, 0, 0);
+  height: auto;
+}
+
+.div-4 .div-4right {
+  width: 50%;
+  height: auto;
+  
+}
+
+.div-4 img {
+  border: 5px solid red;
+  border-radius:5cqmax;
+  padding:25px ;
+  margin-bottom: 70px;
+  width:100%;
+  max-width:90%; 
+}
+
+.div-4 .div-4right h1 {
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+}
+
+.div-4 .div-4right p{
+  text-align: center;
+  padding: 5%;
+  font-size: 25px;
+  position: relative;
+  
+}
+
+.div-4 .div-4right .div-4l{
+  font-size: 20px;
+  width: 50%;
+  height: auto;
+
+}
+
+.div-4 .div-4right .div-4r{
+  font-size: 20px;
+  width: 50%;
+  height: auto;
+
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+@media screen and (min-width: 600px) {
+.nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+}
+
+.nav__link a {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .div-2 .left, .div-4 .div-4right, .div-4 .div-4right .div-4l, .div-4 .div-4right .div-4r {
+    width: 150%;
+  }
+  
+  .div-2 .right, .div-4 .div-4left{
+   width: 80%;
+  }
+
+  h2 {
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 1s steps(13) infinite alternate,
+      blink 800ms steps(13) infinite normal;
+    border-right: 5px solid black;
+    padding-left: 40%;
+    position: relative;
+  }
+  .info {
+    text-align: center;
+  }
+}
+
