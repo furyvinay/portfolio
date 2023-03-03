@@ -169,11 +169,12 @@ h2 {
   font-style: bold;
   background-color: red;
   border-radius: 40px;
-  padding: 20px;
   width: auto;
   height: auto;
   line-height: 500%;
+  position: relative;
 }
+
 
 @keyframes typewriter {
   from {
@@ -464,9 +465,9 @@ ul{
 .projects{
   background-color: black;
   color: white;
-
-
 }
+
+
 .project1 {
 width: 100%;
 height: auto;
@@ -477,26 +478,44 @@ justify-content: space-around;
 flex-wrap: wrap;
 }
 
+.project:hover {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  transition: color ease 1s;
+  position: relative;
+  background: rgb(255, 0, 0);
+  transition: all ease 0.5s; 
+  border-radius: 10%;
+  box-shadow: 5px 5px 20px rgb(255, 255, 255);;
+}
+
 .project{
   width: 20%;
   height: 300px;
   border: 2px solid red;
   margin: 20px;
   box-sizing: border-box;
-  position: relative;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgb(245, 4, 4);
+  
+
 }
 
 .project h1 {
   font-size: 40px;
   margin: 5%;
-  color: red;
-  box-shadow: 5px 5px 20px rgb(245, 4, 4);
+  color: rgb(5, 255, 134);
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
   text-align: center;
 }
 
 .project p {
   font-size: 25px;
   margin: 5%;
+  border: red;
 }
 
 .project-head {
@@ -507,7 +526,6 @@ flex-wrap: wrap;
   text-align: center;
   color: rgb(255, 251, 251);
   margin-bottom: -4.4%;
-  /* position: static; */
 
 }
 
