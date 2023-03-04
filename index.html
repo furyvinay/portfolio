@@ -7,10 +7,12 @@
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
        crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="div-1"> 
-            <header>
+            <!-- <header>
       
                 <nav class="nav">
                     <a href="/" class="logo"><h3><span class = "letter">P</span>ort<span class="letter">f</span>olio</h3></a>
@@ -28,6 +30,25 @@
                         <a href="#">blog</a>
                     </div>
                 </nav>
+            </header> -->
+
+            <header>
+                <nav class="nav">
+                    <a href="/" class="logo"><h3><span class = "letter">P</span>ort<span class="letter">f</span>olio</h3></a>
+          
+                  <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+          
+                  <div class="nav__link hide">
+                    <a href="#">home</a>
+                    <a href="#">about</a>
+                    <a href="#">contact</a>
+                    <a href="#">blog</a>
+                  </div>
+                </nav>
             </header>
         </div>
             
@@ -36,7 +57,13 @@
                 <p class = "hello"><span class = "letter">Hello</span>, my name</p>
                 <p class="name"><span class = "letter">V</span>. <span class="letter">V</span>inay <span class = "letter">K</span>umar</p>
                 <h2>Web Developer</h2>
-                <p><a href="" class="cv">Download CV</a></p>
+                <p> <button type="button" class="resume">
+                        <span class="button__text">Download Resume</span>
+                        <span class="button__icon">
+                            <i class="fa-solid fa-download"></i>
+                        </span>
+                    </button>
+                </p>
             </div>
                
             <div class="right">
@@ -166,6 +193,11 @@
             </div>
         </div>
 
+        
+
+
+
+
         <div class="project-head">
             <h1 class="heading">Projects</h1>
             <div class="aboutMe">
@@ -198,7 +230,7 @@
         </div>  
         <div class="box">
         <div class="formBox">
-            <h2>Contact Us</h2>
+            <h2>Contact Me</h2>
             <form action="#">
                 <div class="nameInp">
                     <i class="fa-solid fa-user"></i>
@@ -226,8 +258,13 @@
 
     <div class="footer">
         <div class="footer-content">
-            <h3>Vinay Kumar</h3>
-            <p>Raj Template is a blog website where you will find great tutorials on web design and development. Here each tutorial is beautifully described step by step with the required source code.</p>
+            <button type="button" class="button">
+                <span class="button__text">Download Resume</span>
+                <span class="button__icon">
+                    <i class="fa-solid fa-download"></i>
+                </span>
+            </button>
+            <!-- <p>Raj Template is a blog website where you will find great tutorials on web design and development. Here each tutorial is beautifully described step by step with the required source code.</p> -->
             <ul class="socials">
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
