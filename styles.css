@@ -746,7 +746,7 @@ padding-bottom: 40px;
 }
 .footer-bottom p{
 float: left;
-  font-size: 14px;
+  font-size: 19px;
   word-spacing: 2px;
   text-transform: capitalize;
   margin: 0;
@@ -882,6 +882,14 @@ margin-bottom: 20px;
   .box {
       height: 50vh;
     }
+
+  .footer-content p{
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 20px;
+    color: #000000;
+  }
 
     
 }
