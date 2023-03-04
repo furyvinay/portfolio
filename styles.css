@@ -5,8 +5,20 @@ body{
   border: 0cap;
   width : 100%;
   height: 100% ;
+  font-family: sans-serif;
 
 }
+
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
 
 .div-1 {
   background-color: black;
@@ -56,7 +68,7 @@ flex-flow: wrap;
 
 
 
-.nav {
+/* .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,12 +128,65 @@ flex-flow: wrap;
 
 .hide {
   display: none;
+} */
+
+/* nav styles */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: rgb(5, 5, 116);
+  padding-left: 20px;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.nav__link {
+  position: fixed;
+  width: 94%;
+  top: 5rem;
+  left: 18px;
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration:none;
+  font-size: 20px;
+  color: white;
+  font-style: bold;
+}
+
+.nav__link a:hover {
+  background-color: lightcoral;
+}
+
+.hide {
+  display: none;
 }
 
 
 
 
-h3 {
+.logo h3 {
   color: aliceblue;
 }
 
@@ -178,6 +243,49 @@ h2 {
   position: relative;
   cursor: pointer;
 }
+
+
+.resume {
+	/* display: flex; */
+	height: 50px;
+	padding: 0;
+	background: #950000ec;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	overflow: hidden;
+	font-family: "Quicksand", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+  margin: 90px;
+
+  
+
+  /* text-decoration: none;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: 2px dashed red;
+  padding: 20px;
+  font-style: bold;
+  background-color: red;
+  border-radius: 40px;
+  width: auto;
+  height: auto;
+  line-height: 500%;
+  position: relative;
+  cursor: pointer; */
+}
+
+.resume:hover {
+	background: #810074;
+}
+
+.resume:active {
+	background: #006e58;
+}
+
+
 
 
 @keyframes typewriter {
@@ -565,7 +673,7 @@ flex-wrap: wrap;
 .box {
 background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(210,57,57,0.6559873949579832) 78%, rgba(255,255,255,1) 100%);
 background-repeat: no-repeat;
-height: 120vh;
+height: 88vh;
 overflow-y: hidden;
 display: flex;
 justify-content: center;
@@ -649,7 +757,7 @@ textarea {
   font-size: 1em;
 }
 
-button {
+#btn {
   width: 50%;
   height: 5vh;
   color: #ffffff;
@@ -685,6 +793,44 @@ button {
   padding-top: 50px;
   color: #070000;
 }
+
+.button {
+	display: flex;
+	height: 50px;
+	padding: 0;
+	background: #009578;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	overflow: hidden;
+	font-family: "Quicksand", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: #008168;
+}
+
+.button:active {
+	background: #006e58;
+}
+
+.button__text,
+.button__icon {
+	display: inline-flex;
+	align-items: center;
+	padding: 0 24px;
+	color: #fff;
+	height: 100%;
+}
+
+.button__icon {
+	font-size: 1.5em;
+	background: rgba(0, 0, 0, 0.08);
+}
+
 .footer-content{
   display: flex;
   align-items: center;
@@ -701,6 +847,8 @@ button {
   line-height: 3rem;
   color: #090000;
 }
+
+
 .footer-content p{
   max-width: 500px;
   margin: 10px auto;
@@ -810,7 +958,7 @@ margin-bottom: 20px;
 
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
 .nav__link {
     display: block;
     position: static;
@@ -827,7 +975,6 @@ margin-bottom: 20px;
 .hamburger {
   display: none;
 }
-
 
 }
 
@@ -875,12 +1022,12 @@ margin-bottom: 20px;
 
   .formBox {
       min-height: 20vh;
-      min-width: 50vw;
+      min-width: 70vw;
       display: flex;
     }
 
   .box {
-      height: 50vh;
+      height: 40vh;
     }
 
   .footer-content p{
