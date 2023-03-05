@@ -13,11 +13,13 @@ body{
 a {
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   font-weight: bold;
   text-transform: uppercase;
 }
-
+*{
+  scroll-behavior: smooth;
+}
 
 
 .div-1 {
@@ -894,7 +896,7 @@ padding-bottom: 40px;
 }
 .footer-bottom p{
 float: left;
-  font-size: 19px;
+  font-size: 10px;
   word-spacing: 2px;
   text-transform: capitalize;
   margin: 0;
@@ -902,7 +904,7 @@ float: left;
 .footer-bottom p a{
 color:#ff0000;
 text-shadow: 5px 5px 20px rgb(255, 255, 255);
-font-size: 19px;
+font-size: 10px;
 text-decoration: none;
 }
 .footer-bottom span{
@@ -910,39 +912,8 @@ text-decoration: none;
   opacity: .4;
   font-weight: 200;
 }
-.footer-menu{
-float: right;
 
 
-}
-.footer-menu ul{
-display: flex;
-margin: 0px;
-
-
-
-
-}
-.footer-menu ul li{
-  padding-right: 20px;
-  display: block;
-  
-}
-.footer-menu ul li a{
-color: red;
-text-decoration: none;
-font-size: 20px;
-}
-.footer-menu ul li a:hover{
-color: #27bcda;
-}
-
-@media (max-width:500px) {
-.footer-menu ul{
-display: flex;
-margin-top: 10px;
-margin-bottom: 20px;
-}}
  
 
 
@@ -980,6 +951,17 @@ margin-bottom: 20px;
 
 
 @media only screen and (max-width: 1200px) {
+
+
+
+  .logo {
+    font-size: 3.0rem;
+    text-align: right;
+    color: rgb(5, 5, 116);
+    padding-left: 20px;
+  }
+
+
   .div-2 .left, .div-4 .div-4right, .div-4 .div-4right .div-4l, .div-4 .div-4right .div-4r {
     width: 150%;
   }
@@ -1038,6 +1020,53 @@ margin-bottom: 20px;
     color: #000000;
   }
 
-    
+  .div-4 .div-4right .div-4l,.div-4 .div-4right .div-4r{
+    font-size: 22.70px;
+    padding-left: 100px;
+    text-align: left;
+    width: 150%;
+    height: auto;
+  
+  }
+
+  .nav__link {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    color: #000;
+    position: relative;
 }
 
+}
+
+
+
+
+.button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #2980b9;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+    width: 100%;
+
+}
